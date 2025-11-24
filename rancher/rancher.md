@@ -70,6 +70,9 @@ helm install cert-manager jetstack/cert-manager \
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 helm repo update
 ```
+```
+kubectl create ns cattle-system
+```
 
 ```
 helm install rancher rancher-stable/rancher \  
